@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+
+    <title>Rock, Paper, Scissors</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>
+          <span>Rock</span>
+          <span>Paper</span>
+          <span>Scissors</span>
+        </h1>
+        <div class="score-container">
+          <h4> your Score</h4>
+          <p id="score">0</p>
+        </div>
+      </header>
+
+      <main id="main">
+        <button class="btn-circle paper pick" data-choice="paper">
+          <span class="wrapper">
+            <img src="./images/icon-paper.svg" alt="paper" />
+          </span>
+        </button>
+        <button class="btn-circle scissors pick" data-choice="scissors">
+          <span class="wrapper">
+            <img src="./images/icon-scissors.svg" alt="scissors" />
+          </span>
+        </button>
+        <button class="btn-circle rock pick" data-choice="rock">
+          <span class="wrapper">
+            <img src="./images/icon-rock.svg" alt="rock" />
+          </span>
+        </button>
+      </main>
+        <div class="rules-modal" id="modal">
+          <div class="modal">
+            <img src="./images/image-rules.svg" alt="rules">
+          </div>
+          <button>
+            <img id="close" src="./images/icon-close.svg" alt="close">
+          </button>
+        </div>
+      <button class="rules" id="open">Rules</button>
+    </div>
+
+    <div class="selection" id="selection">
+      <div>
+        <h3>you picked</h3>
+        <button class="btn-circle paper" id="user_select">
+          <span class="wrapper">
+            <img src="./images/icon-paper.svg" alt="paper" />
+          </span>
+        </button>
+      </div>
+      <div>
+        <h1 id="winner"></h1>
+        <button class="btn" id="reset">play again</button>
+      </div>
+      <div>
+        <h3>computer picked</h4>
+        <button class="btn-circle rock" id="computer_select">
+          <span class="wrapper">
+            <img src="./images/icon-rock.svg" alt="rock" />
+          </span>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
